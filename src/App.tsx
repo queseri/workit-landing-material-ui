@@ -1,6 +1,7 @@
 import "./App.css";
 import { Box, Container, Link, Stack, Typography } from "@mui/material";
 import { useTheme } from "@mui/material/styles";
+import { visuallyHidden } from "@mui/utils";
 import Logo from "./assets/images/logo-light.svg";
 import LogoDark from "./assets/images/logo-dark.svg";
 import HeroImg from "./assets/images/image-hero.webp";
@@ -52,12 +53,7 @@ function App() {
                         alignItems={"center"}
                     >
                         <Link href="#">
-                            <Box
-                                component="img"
-                                src={Logo}
-                                alt=""
-                                aria-hidden={true}
-                            />
+                            <Box component="img" src={Logo} alt="workit home" />
                         </Link>
                     </Grid2>
 
@@ -125,6 +121,9 @@ function App() {
                         }}
                     >
                         Learn more
+                        <Box component={"span"} sx={visuallyHidden}>
+                            about our services and products
+                        </Box>
                     </Link>
                     {/* HERO IMG */}
                     <Box>
@@ -266,8 +265,17 @@ function App() {
             </Box>
 
             {/* ASIDE CONTENT */}
-            <Stack spacing={2} component={"aside"}>
-                <Box>
+            <Stack
+                spacing={2}
+                component={"aside"}
+                direction={{ sm: "row" }}
+                alignItems={{ sm: "baseline" }}
+            >
+                <Box
+                    flex={{
+                        sm: "1 1 40%",
+                    }}
+                >
                     <Box
                         component={"img"}
                         src={FounderImg}
@@ -278,6 +286,9 @@ function App() {
                     />
                 </Box>
                 <Stack
+                    flex={{
+                        sm: "1 1 80%",
+                    }}
                     spacing={2}
                     justifyContent={"center"}
                     alignItems={"center"}
@@ -285,7 +296,14 @@ function App() {
                         backgroundColor: darkPurple,
                         color: pureWhite,
                         padding: "0.9rem",
-                        top: "-6rem",
+                        marginTop: "2rem",
+                        top: {
+                            xs: "-6rem",
+                            sm: "-3rem",
+                        },
+                        left: {
+                            sm: "-6rem",
+                        },
                         position: "relative",
                     }}
                 >
@@ -312,7 +330,7 @@ function App() {
                         fontFamily={`"Manrope", "sans-serif"`}
                         fontWeight={700}
                         paddingX={"1.5rem"}
-                        paddingY={"1rem"}                      
+                        paddingY={"1rem"}
                         sx={{
                             backgroundColor: lime,
                             textDecoration: "none",
@@ -325,7 +343,12 @@ function App() {
             </Stack>
 
             {/* FOOTER CONTENT */}
-            <Stack component={"footer"} spacing={3} justifyContent={"center"} alignItems={"center"}>
+            <Stack
+                component={"footer"}
+                spacing={3}
+                justifyContent={"center"}
+                alignItems={"center"}
+            >
                 <Box component={"nav"} aria-label="footer home navigation">
                     <Box
                         component="img"
