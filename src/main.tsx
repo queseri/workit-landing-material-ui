@@ -19,15 +19,20 @@ const theme = createTheme({
     //  },
   },
   typography: {
-    fontFamily: ["Fraunces", "serif"].join(","),
-    h1: {
-      fontSize: "5rem",
-    },
+    fontFamily: ["Manrope", "sans-serif"].join(","),
   },
 });
 
 theme.typography.h1 = {
-  fontSize: "4rem",
+  fontSize: "3.125rem",
+  color: theme.status.pureWhite,
+};
+
+theme.typography.h2 = {
+  fontFamily: "Fraunces, serif",
+  fontSize: "1.75rem",
+  fontWeight: 600,
+  color: theme.status.darkPurple,
 };
 
 ReactDOM.createRoot(document.getElementById("root")!).render(
