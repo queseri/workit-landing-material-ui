@@ -25,7 +25,7 @@ function App() {
                     content: '""',
                     top: 0,
                     left: 0,
-                    minHeight: "55vh",
+                    minHeight: "63vh",
                     width: "100vw",
                     backgroundColor: darkPurple,
                     zIndex: 0,
@@ -33,7 +33,7 @@ function App() {
                     //  backgroundSize: "cover",
                     //  backgroundRepeat: "no-repeat",
                     clipPath:
-                        "polygon(0% 0%, 100% 0%, 100% 80%, 75% 85%, 50% 87%, 25% 85%, 0% 80%)",
+                        "polygon(0% 0%, 100% 0%, 100% 80%, 85% 84%, 70% 87%, 50% 87%, 30% 85%, 15% 83%, 0% 80%)",
                 },
             }}
         >
@@ -109,7 +109,7 @@ function App() {
                         href="#"
                         display={"inline-block"}
                         color={darkPurple}
-                        marginY={"2rem"}
+                        marginY={"2.5rem"}
                         fontSize={"1rem"}
                         fontFamily={`"Manrope", "sans-serif"`}
                         fontWeight={700}
@@ -136,7 +136,12 @@ function App() {
                     </Box>
                 </Box>
                 {/* SECTIONS */}
-                <Grid2 container marginY={"5rem"} spacing={6}>
+                <Grid2
+                    container
+                    marginTop={"3rem"}
+                    marginBottom={"5rem"}
+                    spacing={6}
+                >
                     {/* SECTION ONE*/}
                     <Grid2
                         container
@@ -168,10 +173,18 @@ function App() {
                             </Typography>
                         </Grid2>
                         <Grid2 sm={10} md={12}>
-                            <Typography variant="h2" fontSize={"1.75rem"}>
+                            <Typography
+                                variant="h2"
+                                fontSize={"1.75rem"}
+                                gutterBottom
+                            >
                                 Actionable insights
                             </Typography>
-                            <Typography variant="body2">
+                            <Typography
+                                variant="body2"
+                                lineHeight={1.75}
+                                fontSize={"1rem"}
+                            >
                                 Optimize your products, improve customer
                                 satisfaction and stay ahead of the competition
                                 with our product data analytics.
@@ -209,10 +222,18 @@ function App() {
                             </Typography>
                         </Grid2>
                         <Grid2 sm={10} md={12}>
-                            <Typography variant="h2">
+                            <Typography
+                                variant="h2"
+                                fontSize={"1.75rem"}
+                                gutterBottom
+                            >
                                 Data-driven decisions
                             </Typography>
-                            <Typography variant="body2">
+                            <Typography
+                                variant="body2"
+                                lineHeight={1.75}
+                                fontSize={"1rem"}
+                            >
                                 Make data-driven decisions with our product data
                                 analytics. Our AI-generated reports help you
                                 unlock insights hidden in your product data.
@@ -250,10 +271,18 @@ function App() {
                             </Typography>
                         </Grid2>
                         <Grid2 sm={10} md={12}>
-                            <Typography variant="h2">
+                            <Typography
+                                variant="h2"
+                                fontSize={"1.75rem"}
+                                gutterBottom
+                            >
                                 Always affordable
                             </Typography>
-                            <Typography variant="body2">
+                            <Typography
+                                variant="body2"
+                                lineHeight={1.75}
+                                fontSize={"1rem"}
+                            >
                                 Always affordable pricing that scales with your
                                 business. Get top-quality product data analytics
                                 services without hidden costs or unexpected
@@ -272,6 +301,7 @@ function App() {
                 alignItems={{ sm: "baseline" }}
             >
                 <Box
+                    padding={"2rem"}
                     flex={{
                         sm: "1 1 40%",
                     }}
