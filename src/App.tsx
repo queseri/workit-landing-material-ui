@@ -301,7 +301,7 @@ function App() {
                 alignItems={{ sm: "baseline" }}
             >
                 <Box
-                    padding={"2rem"}
+                    padding={"1.95rem"}
                     flex={{
                         sm: "1 1 40%",
                     }}
@@ -325,10 +325,10 @@ function App() {
                     sx={{
                         backgroundColor: darkPurple,
                         color: pureWhite,
-                        padding: "0.9rem",
+                        padding: "1.9rem",
                         marginTop: "2rem",
                         top: {
-                            xs: "-6rem",
+                            xs: "-5rem",
                             sm: "-3rem",
                         },
                         left: {
@@ -337,7 +337,12 @@ function App() {
                         position: "relative",
                     }}
                 >
-                    <Typography variant="h2" color={pureWhite}>
+                    <Typography
+                        variant="h2"
+                        color={pureWhite}
+                        fontSize={"2rem"}
+                        lineHeight={1.5}
+                    >
                         Be the first to test
                     </Typography>
                     <Typography
@@ -360,7 +365,7 @@ function App() {
                         fontFamily={`"Manrope", "sans-serif"`}
                         fontWeight={700}
                         paddingX={"1.5rem"}
-                        paddingY={"1rem"}
+                        paddingY={"1.5rem"}
                         sx={{
                             backgroundColor: lime,
                             textDecoration: "none",
@@ -375,9 +380,10 @@ function App() {
             {/* FOOTER CONTENT */}
             <Stack
                 component={"footer"}
-                spacing={3}
+                spacing={6}
                 justifyContent={"center"}
                 alignItems={"center"}
+                marginBottom={"5rem"}
             >
                 <Box component={"nav"} aria-label="footer home navigation">
                     <Box
