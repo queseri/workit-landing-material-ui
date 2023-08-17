@@ -315,6 +315,7 @@ function App() {
 
             {/* ASIDE CONTENT */}
             <Stack
+                paddingTop={"2.5rem"}
                 spacing={2}
                 component={"aside"}
                 direction={{ sm: "row" }}
@@ -336,20 +337,20 @@ function App() {
                         maxHeight={"29.8rem"}
                     />
                 </Box>
-                <Stack
-                    flex={{
-                        sm: "1 1 55%",
-                    }}
-                    spacing={2}
-                    justifyContent={"center"}
-                    alignItems={"center"}
+                <Box
+                    // flex={{
+                    //     sm: "1 1 55%",
+                    //  }}
+                    //  spacing={2}
+                    //  justifyContent={"center"}
+                    // alignItems={"center"}
                     sx={{
                         backgroundColor: darkPurple,
                         color: pureWhite,
                         padding: "1.9rem",
                         marginTop: "2rem",
                         top: {
-                            xs: "-5rem",
+                            xs: "-7.25rem",
                             sm: "-4rem",
                         },
                         left: {
@@ -361,7 +362,7 @@ function App() {
                     <Typography
                         variant="h2"
                         color={pureWhite}
-                        fontSize={{ xs: "2rem", sm: "3rem", }}
+                        fontSize={{ xs: "2rem", sm: "3rem" }}
                         lineHeight={1.5}
                     >
                         Be the first to test
@@ -381,7 +382,7 @@ function App() {
                         href="#"
                         display={"inline-block"}
                         color={darkPurple}
-                        marginY={"2rem"}
+                        marginTop={"1.5rem"}
                         fontSize={"1rem"}
                         fontFamily={`"Manrope", "sans-serif"`}
                         fontWeight={700}
@@ -395,15 +396,16 @@ function App() {
                         {" "}
                         Apply for access
                     </Link>
-                </Stack>
+                </Box>
             </Stack>
 
             {/* FOOTER CONTENT */}
             <Stack
                 component={"footer"}
-                spacing={6}
+                spacing={7}
                 justifyContent={"center"}
                 alignItems={"center"}
+                marginTop={"-2.5rem"}
                 marginBottom={"5rem"}
             >
                 <Box component={"nav"} aria-label="footer home navigation">
@@ -414,7 +416,7 @@ function App() {
                         aria-hidden={true}
                     />
                 </Box>
-                <Stack component={"ul"} spacing={2} direction={"row"}>
+                <Stack component={"ul"} spacing={3} direction={"row"}>
                     <Box component={"li"}>
                         <Link href="#">
                             <img src={Facebook} alt="" />
