@@ -1,10 +1,10 @@
 import React from "react";
-import { CssBaseline, createTheme, ThemeProvider } from "@mui/material";
+import { CssBaseline, createTheme, responsiveFontSizes, ThemeProvider } from "@mui/material";
 import ReactDOM from "react-dom/client";
 import App from "./App.tsx";
 import "./index.css";
 
-const theme = createTheme({
+let theme = createTheme({
   status: {
     pureWhite: "hsla(0, 0%, 100%, 1)",
     lightGrey: "hsla(274, 100%, 99%, 1)",
@@ -23,8 +23,13 @@ const theme = createTheme({
   },
 });
 
+theme = responsiveFontSizes(theme)
+
 theme.typography.h1 = {
   fontSize: "3.125rem",
+  [theme.breakpoints.up("sm")]: {
+    fontSize: "3.75rem",
+  },
   color: theme.status.pureWhite,
 };
 

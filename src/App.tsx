@@ -10,6 +10,7 @@ import Grid2 from "@mui/material/Unstable_Grid2/Grid2";
 import Facebook from "./assets/images/icon-facebook.svg";
 import Twitter from "./assets/images/icon-twitter.svg";
 import Instagram from "./assets/images/icon-instagram.svg";
+import { asidePanel, leftSide, rightSide } from "./Styles";
 
 function App() {
     const colorTheme = useTheme();
@@ -25,7 +26,10 @@ function App() {
                     content: '""',
                     top: 0,
                     left: 0,
-                    minHeight: "63vh",
+                    minHeight: {
+                        xs: "63vh",
+                        sm: "70vh",
+                    },
                     width: "100vw",
                     backgroundColor: darkPurple,
                     zIndex: 0,
@@ -84,10 +88,16 @@ function App() {
             {/* HEADER END */}
 
             {/* MAIN ELEMENT */}
-            <Box component={"main"} sx={{ position: "relative", zIndex: 1 }}>
+            <Box component={"main"} sx={[leftSide, rightSide]}>
                 <Box marginTop={"4rem"}>
                     {/* MAIN HEADING ELEMENT */}
-                    <Typography variant="h1" fontWeight={600}>
+                    <Typography
+                        variant="h1"
+                        fontWeight={600}
+                        paddingX={{
+                            sm: "4rem",
+                        }}
+                    >
                         {" "}
                         Data{" "}
                         <Typography
@@ -126,12 +136,22 @@ function App() {
                         </Box>
                     </Link>
                     {/* HERO IMG */}
-                    <Box>
+                    <Box
+                        display={"flex"}
+                        justifyContent={"center"}
+                        alignItems={"center"}
+                    >
                         <Box
                             component={"img"}
                             src={HeroImg}
                             alt="Mobile phone"
-                            sx={{ opacity: 0.4 }}
+                            width={{ sm: "75%" }}
+                            sx={{
+                                opacity: {
+                                    xs: 0.4,
+                                    sm: 1,
+                                },
+                            }}
                         />
                     </Box>
                 </Box>
@@ -299,9 +319,10 @@ function App() {
                 component={"aside"}
                 direction={{ sm: "row" }}
                 alignItems={{ sm: "baseline" }}
+                sx={asidePanel}
             >
                 <Box
-                    padding={"1.95rem"}
+                    padding={{ xs: "1.95rem", sm: 0 }}
                     flex={{
                         sm: "1 1 40%",
                     }}
@@ -317,7 +338,7 @@ function App() {
                 </Box>
                 <Stack
                     flex={{
-                        sm: "1 1 80%",
+                        sm: "1 1 55%",
                     }}
                     spacing={2}
                     justifyContent={"center"}
@@ -329,10 +350,10 @@ function App() {
                         marginTop: "2rem",
                         top: {
                             xs: "-5rem",
-                            sm: "-3rem",
+                            sm: "-4rem",
                         },
                         left: {
-                            sm: "-6rem",
+                            sm: "-7rem",
                         },
                         position: "relative",
                     }}
@@ -340,7 +361,7 @@ function App() {
                     <Typography
                         variant="h2"
                         color={pureWhite}
-                        fontSize={"2rem"}
+                        fontSize={{ xs: "2rem", sm: "3rem", }}
                         lineHeight={1.5}
                     >
                         Be the first to test
