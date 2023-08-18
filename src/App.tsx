@@ -29,13 +29,12 @@ function App() {
                     minHeight: {
                         xs: "63vh",
                         sm: "70vh",
+                        lg: "95vh",
                     },
                     width: "100vw",
                     backgroundColor: darkPurple,
                     zIndex: 0,
                     //  backgroundImage: "url('./assets/images/bg-hero.svg')",
-                    //  backgroundSize: "cover",
-                    //  backgroundRepeat: "no-repeat",
                     clipPath:
                         "polygon(0% 0%, 100% 0%, 100% 80%, 85% 84%, 70% 87%, 50% 87%, 30% 85%, 15% 83%, 0% 80%)",
                 },
@@ -71,7 +70,7 @@ function App() {
                         <Link
                             href="#"
                             color={pureWhite}
-                            fontSize={"1rem"}
+                            fontSize={{ xs: "1rem", lg: "1.125rem" }}
                             fontFamily={`"Manrope", "sans-serif"`}
                             fontWeight={700}
                             sx={{
@@ -94,6 +93,8 @@ function App() {
                     <Typography
                         variant="h1"
                         fontWeight={600}
+                        maxWidth={"41rem"}
+                        margin={"auto"}
                         paddingX={{
                             sm: "4rem",
                         }}
@@ -119,7 +120,7 @@ function App() {
                         href="#"
                         display={"inline-block"}
                         color={darkPurple}
-                        marginY={"2.5rem"}
+                        marginY={{ xs: "2.5rem", lg: "1.5rem" }}
                         fontSize={"1rem"}
                         fontFamily={`"Manrope", "sans-serif"`}
                         fontWeight={700}
@@ -145,7 +146,7 @@ function App() {
                             component={"img"}
                             src={HeroImg}
                             alt="Mobile phone"
-                            width={{ sm: "75%" }}
+                            width={{ sm: "75%", md: "66.6%" }}
                             sx={{
                                 opacity: {
                                     xs: 0.4,
@@ -156,12 +157,7 @@ function App() {
                     </Box>
                 </Box>
                 {/* SECTIONS */}
-                <Grid2
-                    container
-                    marginTop={"3rem"}
-                    marginBottom={"5rem"}
-                    spacing={6}
-                >
+                <Grid2 container marginY={"5.5rem"} spacing={{ xs: 6, md: 10 }}>
                     {/* SECTION ONE*/}
                     <Grid2
                         container
@@ -195,7 +191,7 @@ function App() {
                         <Grid2 sm={10} md={12}>
                             <Typography
                                 variant="h2"
-                                fontSize={"1.75rem"}
+                                fontSize={{ xs: "1.75rem", md: "2rem" }}
                                 gutterBottom
                             >
                                 Actionable insights
@@ -203,7 +199,7 @@ function App() {
                             <Typography
                                 variant="body2"
                                 lineHeight={1.75}
-                                fontSize={"1rem"}
+                                fontSize={{ xs: "1rem", md: "1.125rem" }}
                             >
                                 Optimize your products, improve customer
                                 satisfaction and stay ahead of the competition
@@ -244,7 +240,7 @@ function App() {
                         <Grid2 sm={10} md={12}>
                             <Typography
                                 variant="h2"
-                                fontSize={"1.75rem"}
+                                fontSize={{ xs: "1.75rem", md: "2rem" }}
                                 gutterBottom
                             >
                                 Data-driven decisions
@@ -252,7 +248,7 @@ function App() {
                             <Typography
                                 variant="body2"
                                 lineHeight={1.75}
-                                fontSize={"1rem"}
+                                fontSize={{ xs: "1rem", md: "1.125rem" }}
                             >
                                 Make data-driven decisions with our product data
                                 analytics. Our AI-generated reports help you
@@ -293,7 +289,7 @@ function App() {
                         <Grid2 sm={10} md={12}>
                             <Typography
                                 variant="h2"
-                                fontSize={"1.75rem"}
+                                fontSize={{ xs: "1.75rem", md: "2rem" }}
                                 gutterBottom
                             >
                                 Always affordable
@@ -301,7 +297,7 @@ function App() {
                             <Typography
                                 variant="body2"
                                 lineHeight={1.75}
-                                fontSize={"1rem"}
+                                fontSize={{ xs: "1rem", md: "1.125rem" }}
                             >
                                 Always affordable pricing that scales with your
                                 business. Get top-quality product data analytics
@@ -316,16 +312,18 @@ function App() {
             {/* ASIDE CONTENT */}
             <Stack
                 paddingTop={"2.5rem"}
+                // marginTop={{ md: "12.5rem" }}
                 spacing={2}
                 component={"aside"}
                 direction={{ sm: "row" }}
-                alignItems={{ sm: "baseline" }}
+                alignItems={{ sm: "baseline", md: "last baseline" }}
                 sx={asidePanel}
             >
                 <Box
                     padding={{ xs: "1.95rem", sm: 0 }}
                     flex={{
-                        sm: "1 1 40%",
+                        sm: "1 1 30%",
+                        md: "1 1 45%",
                     }}
                 >
                     <Box
@@ -337,24 +335,27 @@ function App() {
                         maxHeight={"29.8rem"}
                     />
                 </Box>
-                <Box
-                    // flex={{
-                    //     sm: "1 1 55%",
-                    //  }}
+                <Stack
+                    flex={{
+                        sm: "1 1 65%",
+                        md: "1 1 55%",
+                    }}
                     //  spacing={2}
-                    //  justifyContent={"center"}
-                    // alignItems={"center"}
+                    justifyContent={"center"}
+                    alignItems={{ xs: "center", sm: "baseline" }}
                     sx={{
                         backgroundColor: darkPurple,
                         color: pureWhite,
-                        padding: "1.9rem",
+                        padding: { xs: "1.9rem", md: "3rem" },
                         marginTop: "2rem",
                         top: {
                             xs: "-7.25rem",
-                            sm: "-4rem",
+                            sm: "-2rem",
+                            md: "-3rem",
                         },
                         left: {
-                            sm: "-7rem",
+                            sm: "-5rem",
+                            md: "-8rem",
                         },
                         position: "relative",
                     }}
@@ -372,6 +373,7 @@ function App() {
                         lineHeight={1.75}
                         fontWeight={400}
                         fontSize={"1rem"}
+                        textAlign={{ md: "left" }}
                     >
                         Hi, I'm Louis Graham, the founder of the company. Book a
                         demo call with me to become a beta tester for our app
@@ -396,7 +398,7 @@ function App() {
                         {" "}
                         Apply for access
                     </Link>
-                </Box>
+                </Stack>
             </Stack>
 
             {/* FOOTER CONTENT */}
@@ -405,7 +407,7 @@ function App() {
                 spacing={7}
                 justifyContent={"center"}
                 alignItems={"center"}
-                marginTop={"-2.5rem"}
+                marginTop={{ xs: "-2.5rem", sm: "2.5rem" }}
                 marginBottom={"5rem"}
             >
                 <Box component={"nav"} aria-label="footer home navigation">

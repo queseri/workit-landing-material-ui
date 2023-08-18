@@ -30,6 +30,9 @@ theme.typography.h1 = {
   [theme.breakpoints.up("sm")]: {
     fontSize: "3.75rem",
   },
+  [theme.breakpoints.up("lg")]: {
+    fontSize: "5rem",
+  },
   color: theme.status.pureWhite,
 };
 

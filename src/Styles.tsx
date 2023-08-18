@@ -52,7 +52,7 @@ export const asidePanel = {
         zIndex: 1,
         position: "absolute",
         content: '""',
-        bottom: 0,
+        bottom: "-4rem",
         right: "3.5rem",
         height: {
             xs: 0,
