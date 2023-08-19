@@ -36,37 +36,43 @@ function Footer() {
                 <Box component={"li"}>
                     <Link
                         href="#"
+                        target="_blank"
+                        rel="noopener noreferrer"
                         display={"block"}
                         paddingX={"1rem"}
                         paddingY={"1rem"}
                         className="btn-link"
                     >
-                        <Box sx={visuallyHidden}>Workit landing page</Box>
-                        <img src={Facebook} alt="" />
+                        <Box sx={visuallyHidden}>Facebook page</Box>
+                        <img src={Facebook} alt="opens in new tab" />
                     </Link>
                 </Box>
                 <Box component={"li"}>
                     <Link
                         href="#"
+                        target="_blank"
+                        rel="noopener noreferrer"
                         display={"block"}
                         paddingX={"1rem"}
                         paddingY={"1rem"}
                         className="btn-link"
                     >
-                        <Box sx={visuallyHidden}>Workit landing page</Box>
-                        <img src={Twitter} alt="" />{" "}
+                        <Box sx={visuallyHidden}>Twitter page</Box>
+                        <img src={Twitter} alt="opens in new tab" />
                     </Link>
                 </Box>
                 <Box component={"li"}>
                     <Link
                         href="#"
+                        target="_blank"
+                        rel="noopener noreferrer"
                         display={"block"}
                         paddingX={"1rem"}
                         paddingY={"1rem"}
                         className="btn-link"
                     >
-                        <Box sx={visuallyHidden}>Workit landing page</Box>
-                        <img src={Instagram} alt="" />
+                        <Box sx={visuallyHidden}>Instagram page</Box>
+                        <img src={Instagram} alt="opens in new tab" />
                     </Link>
                 </Box>
             </Stack>
