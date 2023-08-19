@@ -1,4 +1,4 @@
-import { Stack, Box, Typography, Link, useTheme } from "@mui/material";
+import { Stack, Box, Typography, Link, useTheme, Paper } from "@mui/material";
 import { asidePanel } from "../Styles";
 import FounderImg from "../assets/images/image-founder.webp";
 
@@ -23,14 +23,16 @@ function Aside() {
                     md: "1 1 45%",
                 }}
             >
-                <Box
-                    component={"img"}
-                    src={FounderImg}
-                    alt="Louis Graham"
-                    width={"100%"}
-                    maxWidth={"29.8rem"}
-                    maxHeight={"29.8rem"}
-                />
+                <Paper elevation={4} className="card">
+                    <Box
+                        component={"img"}
+                        src={FounderImg}
+                        alt="Louis Graham"
+                        width={"100%"}
+                        maxWidth={"29.8rem"}
+                        maxHeight={"29.8rem"}
+                    />
+                </Paper>
             </Box>
             <Stack
                 flex={{

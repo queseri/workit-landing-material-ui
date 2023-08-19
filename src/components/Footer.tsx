@@ -4,7 +4,6 @@ import Twitter from "../assets/images/icon-twitter.svg";
 import Instagram from "../assets/images/icon-instagram.svg";
 import LogoDark from "../assets/images/logo-dark.svg";
 
-
 function Footer() {
     return (
         <Stack
@@ -16,7 +15,13 @@ function Footer() {
             marginBottom={"5rem"}
         >
             <Box component={"nav"} aria-label="footer home navigation">
-                <Link href="#">
+                <Link
+                    href="#"
+                    display={"block"}
+                    paddingX={"1rem"}
+                    paddingY={"1rem"}
+                    className="btn-link btn-link-footer"
+                >
                     <Box
                         component="img"
                         src={LogoDark}
@@ -27,19 +32,35 @@ function Footer() {
             </Box>
             <Stack component={"ul"} spacing={3} direction={"row"}>
                 <Box component={"li"}>
-                    <Link href="#">
+                    <Link
+                        href="#"
+                        display={"block"}
+                        paddingX={"1rem"}
+                        paddingY={"1rem"}
+                        className="btn-link"
+                    >
                         <img src={Facebook} alt="" />
                     </Link>
                 </Box>
                 <Box component={"li"}>
-                    <Link href="#">
-                        {" "}
+                    <Link
+                        href="#"
+                        display={"block"}
+                        paddingX={"1rem"}
+                        paddingY={"1rem"}
+                        className="btn-link"
+                    >
                         <img src={Twitter} alt="" />{" "}
                     </Link>
                 </Box>
                 <Box component={"li"}>
-                    <Link href="#">
-                        {" "}
+                    <Link
+                        href="#"
+                        display={"block"}
+                        paddingX={"1rem"}
+                        paddingY={"1rem"}
+                        className="btn-link"
+                    >
                         <img src={Instagram} alt="" />
                     </Link>
                 </Box>

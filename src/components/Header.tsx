@@ -17,7 +17,12 @@ function Header() {
                     justifyContent={"flex-start"}
                     alignItems={"center"}
                 >
-                    <Link href="#">
+                    <Link
+                        paddingX={"1rem"}
+                        paddingY={"1rem"}
+                        href="#"
+                        className="btn-link"
+                    >
                         <Box component="img" src={Logo} alt="workit home" />
                     </Link>
                 </Grid2>
@@ -36,6 +41,8 @@ function Header() {
                         fontSize={{ xs: "1rem", lg: "1.125rem" }}
                         fontFamily={`"Manrope", "sans-serif"`}
                         fontWeight={700}
+                        paddingX={{ xs: "0.25rem", sm: "1rem" }}
+                        paddingY={"1rem"}
                         sx={{
                             textDecorationColor: lime,
                             textDecorationThickness: "3px",
