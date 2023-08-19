@@ -1,4 +1,5 @@
 import { Stack, Box, Link } from "@mui/material";
+import { visuallyHidden } from "@mui/utils";
 import Facebook from "../assets/images/icon-facebook.svg";
 import Twitter from "../assets/images/icon-twitter.svg";
 import Instagram from "../assets/images/icon-instagram.svg";
@@ -22,6 +23,7 @@ function Footer() {
                     paddingY={"1rem"}
                     className="btn-link btn-link-footer"
                 >
+                     <Box sx={visuallyHidden}>Workit landing page</Box>
                     <Box
                         component="img"
                         src={LogoDark}

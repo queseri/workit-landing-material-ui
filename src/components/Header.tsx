@@ -1,6 +1,7 @@
 import { Box, Link, useTheme } from "@mui/material";
 import Grid2 from "@mui/material/Unstable_Grid2";
 import Logo from "../assets/images/logo-light.svg";
+import { visuallyHidden } from "@mui/utils";
 
 function Header() {
     const colorTheme = useTheme();
@@ -23,7 +24,8 @@ function Header() {
                         href="#"
                         className="btn-link"
                     >
-                        <Box component="img" src={Logo} alt="workit home" />
+                        <Box sx={visuallyHidden}>Workit landing page</Box>
+                        <Box component="img" src={Logo} alt="" />
                     </Link>
                 </Grid2>
 
