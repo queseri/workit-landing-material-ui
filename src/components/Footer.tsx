@@ -23,7 +23,7 @@ function Footer() {
                     paddingY={"1rem"}
                     className="btn-link btn-link-footer"
                 >
-                     <Box sx={visuallyHidden}>Workit landing page</Box>
+                    <Box sx={visuallyHidden}>Workit landing page</Box>
                     <Box
                         component="img"
                         src={LogoDark}
@@ -41,6 +41,7 @@ function Footer() {
                         paddingY={"1rem"}
                         className="btn-link"
                     >
+                        <Box sx={visuallyHidden}>Workit landing page</Box>
                         <img src={Facebook} alt="" />
                     </Link>
                 </Box>
@@ -52,6 +53,7 @@ function Footer() {
                         paddingY={"1rem"}
                         className="btn-link"
                     >
+                        <Box sx={visuallyHidden}>Workit landing page</Box>
                         <img src={Twitter} alt="" />{" "}
                     </Link>
                 </Box>
@@ -63,6 +65,7 @@ function Footer() {
                         paddingY={"1rem"}
                         className="btn-link"
                     >
+                        <Box sx={visuallyHidden}>Workit landing page</Box>
                         <img src={Instagram} alt="" />
                     </Link>
                 </Box>
