@@ -31,6 +31,7 @@ function Header() {
                 >
                     <Link
                         href="#"
+                        className="btn-link"
                         color={pureWhite}
                         fontSize={{ xs: "1rem", lg: "1.125rem" }}
                         fontFamily={`"Manrope", "sans-serif"`}

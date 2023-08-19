@@ -79,6 +79,7 @@ function Aside() {
                 </Typography>
                 <Link
                     href="#"
+                    className="btn-link"
                     display={"inline-block"}
                     color={darkPurple}
                     marginTop={"1.5rem"}

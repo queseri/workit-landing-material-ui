@@ -37,6 +37,7 @@ function Hero() {
             {/* LEARN MORE LINK BTN */}
             <Link
                 href="#"
+                className="btn-link"
                 display={"inline-block"}
                 color={darkPurple}
                 marginY={{ xs: "2.5rem", lg: "1.5rem" }}
