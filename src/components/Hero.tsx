@@ -7,7 +7,7 @@ function Hero() {
     const { status } = colorTheme;
     const { darkPurple, lime } = status;
     return (
-        <Box marginTop={"4rem"}>
+        <Box marginTop={"1rem"}>
             {/* MAIN HEADING ELEMENT */}
             <Typography
                 variant="h1"
@@ -61,6 +61,9 @@ function Hero() {
                 display={"flex"}
                 justifyContent={"center"}
                 alignItems={"center"}
+                marginTop={{
+                    lg: "1.5rem",
+                }}
             >
                 <Box
                     component={"img"}

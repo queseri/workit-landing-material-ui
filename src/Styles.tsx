@@ -67,3 +67,4 @@ export const asidePanel = {
         backgroundRepeat: "no-repeat",
     },
 };
+

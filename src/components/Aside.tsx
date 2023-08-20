@@ -8,8 +8,8 @@ function Aside() {
     const { darkPurple, pureWhite, lime } = status;
     return (
         <Stack
-            paddingTop={"2.5rem"}
-            // marginTop={{ md: "12.5rem" }}
+            paddingTop={{ xs: "2.5rem" }}
+            marginTop={{ xs: "2.5rem", sm: "6rem", md: "10rem", lg: "14rem" }}
             spacing={2}
             component={"aside"}
             direction={{ sm: "row" }}

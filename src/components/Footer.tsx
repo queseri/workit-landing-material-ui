@@ -12,7 +12,7 @@ function Footer() {
             spacing={7}
             justifyContent={"center"}
             alignItems={"center"}
-            marginTop={{ xs: "-2.5rem", sm: "2.5rem" }}
+            marginTop={{ xs: "-2.5rem", sm: "2.5rem", lg: "5.5rem" }}
             marginBottom={"5rem"}
         >
             <Box component={"nav"} aria-label="footer home navigation">

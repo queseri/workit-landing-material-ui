@@ -3,7 +3,7 @@ import Benefits from "./Benefits";
 
 function BenefitsList() {
     return (
-        <Grid2 container marginY={"5.5rem"} spacing={{ xs: 6 }}>
+        <Grid2 container marginY={"4rem"} spacing={{ xs: 6 }}>
             <Benefits
                 item={1}
                 title={"Actionable insights"}

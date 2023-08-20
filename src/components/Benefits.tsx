@@ -37,7 +37,7 @@ function Benefits(props: { item: number; title: string; content: string }) {
                     {props.item}
                 </Typography>
             </Grid2>
-            <Grid2 sm={10} md={12}>
+            <Grid2 sm={10} md={12} paddingTop={{ lg: "2rem" }}>
                 <Typography
                     variant="h2"
                     fontSize={{ xs: "1.75rem", md: "2rem" }}
@@ -49,6 +49,7 @@ function Benefits(props: { item: number; title: string; content: string }) {
                 <Typography
                     variant="body2"
                     lineHeight={1.75}
+                    marginTop={{ lg: "2rem" }}
                     fontSize={{ xs: "1rem", md: "1.125rem" }}
                     textAlign={{ xs: "center", sm: "left", md: "center" }}
                 >
